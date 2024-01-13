@@ -1,0 +1,30 @@
+*{
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #66bd20;
+    isolation: isolate;
+}
+
+
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+i.close{
+    cursor: pointer;
+}
+body{
+    background-color: #f4f4f4;
+}
+.sub-title{
+    color: #40A65C;
+    border-top: 1px dotted black;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}

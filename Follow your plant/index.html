@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/Master.Css">
+</head>
+<body>
+    <div class="vh-100 position-relative">
+        <div class="layer position-absolute top-0 bottom-0 start-0 end-0 d-none align-items-center justify-content-center ">
+            <div class="bg-white text-black p-5">
+                <i class="fa-solid fa-xmark close fs-3 d-block text-end close py-2" onclick="closeLayer()"></i>
+                <h4>Plant Name or Url is not valid, Please follow the rules below :</h4>
+                <p>Plant name must contain at least 3 characters</p>
+                <p>Plant URL must be a valid one</p>
+            </div>
+        </div>
+
+       
+        <div class="container text-center py-5">
+            <h1 class="py-4 bold position-relative">Plant Details</h1>
+            <h3 class="py-3 sub-title"><i class="fa-solid fa-bookmark"></i> Follow up your plant <i class="fa-solid fa-bookmark"></i></h3>
+        
+        <div class="mb-3">
+            <label for="SiteName" class="form-label  text-start d-block"><i class="fa-solid fa-book-bookmark pe-2"></i>Plant Name</label>
+            <input type="text" class="form-control" id="SiteName" placeholder="Bookmark Name">
+          </div>
+          <div class="mb-3">
+            <label for="SiteURL" class="form-label text-start d-block"><i class="fa-solid fa-link pe-2"></i>Plant URL</label>
+            <input type="text" class="form-control" id="SiteURL" placeholder="Website URL">
+          </div>
+          <button id="submit" class="btn btn-lg btn-danger my-3">Submit</button>
+          <button id="submit" class="btn btn-lg btn-danger my-3"><a href="https://www.bing.com/ck/a?!&&p=5b41e6a05204f194JmltdHM9MTcwNDc1ODQwMCZpZ3VpZD0xMDVlZjQ3NC0yY2M4LTY3YTQtM2Q3ZC1lN2M2MmRiZjY2YzcmaW5zaWQ9NTIxMA&ptn=3&ver=2&hsh=3&fclid=105ef474-2cc8-67a4-3d7d-e7c62dbf66c7&psq=google+lens&u=a1aHR0cHM6Ly9sZW5zLmdvb2dsZS8&ntb=1" target="_blank">Scan</a></button>
+          <table class="table">
+           <thead>
+            <tr>
+                <th>Index</th>
+                <th>Aeroponic Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+           </thead>
+           <tbody>
+           </tbody>
+          </table>
+        </div>
+    </div>
+    
+   
+    <script src="./Js/main.js"></script>
+</body>
+</html>

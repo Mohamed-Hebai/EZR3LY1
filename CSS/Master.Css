@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Poppins:ital@1&display=swap');
+
+
+
+
+*{
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+    font-weight: 400;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .logo {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+nav ul li {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+nav ul a::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    transition: width 0.4s;
+    border-radius: 2px;
+  }
+
+nav  .logo  img{
+    width: 10%;
+}
+
+nav{
+  background-color: #66bd20;
+}
+  /* nav ul a:hover:before {
+    width: 100%;
+  } */
+
+  body:not(body:has(:target)) li a[href="#home"],
+body:has(#home:target) li a[href="#home"],
+body:has(#About:target) li a[href="#About"],
+body:has(#services:target) li a[href="#services"],
+body:has(#work:target) li a[href="#work"],
+body:has(#clients:target) li a[href="#clients"],
+body:has(#team:target) li a[href="#team"] {
+  color: white;
+}
+
+body:not(body:has(:target)) li a[href="#home"]::before,
+body:has(#home:target) li a[href="#home"]::before,
+body:has(#About:target) li a[href="#About"]::before,
+body:has(#services:target) li a[href="#services"]::before,
+body:has(#work:target) li a[href="#work"]::before,
+body:has(#clients:target) li a[href="#clients"]::before,
+body:has(#team:target) li a[href="#team"]::before {
+  width: 100%;
+}
+
+#home{
+    background-image: url(../cover.png);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+
+
+
+#home .overlay{
+/* background-color: rgba(255, 255, 255, ); */
+position: absolute;
+top: 0;
+left: 0px;
+padding: 0;
+height: 100%;
+width: 100%;
+opacity: 0.9;
+}
+#home .overlay img:hover {
+    animation: Moving alternate infinite 0.1s;
+  }
+  
+  @keyframes Moving {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    100% {
+      transform: translate(2px, 2px);
+    }
+  }
+
+#About .content h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+#About .content .sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#About .progress{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+#About .progress-bar{
+    background-color: #66bd20;
+}
+
+.buton{
+    padding: 10px 30px;
+    border: 1px solid #66bd20;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+
+.buto{
+    padding: 10px 30px;
+    border: 1px solid #66bd20;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+    background-color: #66bd20;
+}
+
+.buton-bg:hover {
+    background-color: white !important; 
+    color: #66bd20 !important; 
+}
+
+.buton:hover {
+    background-color: #66bd20 !important; 
+    color: white !important; 
+}
+
+#About .images::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.social-icon a{
+    text-decoration: none;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section-head  {
+    font-weight: 900;
+    font-size: 40px;
+    display: inline-block;
+    z-index: 2;
+}
+
+.section-head::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    z-index: -1;
+}
+
+#services{
+    background-color: #f1f1f1;
+}
+
+#services .service-box:hover .ico-circle{
+   background-color:#66bd20;  !important
+}
+
+#services .service-box:hover .ico-circle{
+    color: white; !important
+ }
+
+ .service-box{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+ }
+
+ #services .service-box .ico-circle {
+  color: #66bd20;
+ }
+
+
+#services  h3 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+    color: #66bd20;
+}
+
+#services .s-description{
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    
+}
+
+
+ 
+.service-ico .ico-circle{
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto; 
+    background-color: #f4f4f4;
+    transition: all 0.4s;
+}
+
+
+#work .layer {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+ #work .icons i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    transition: all 0.5s;
+  }
+
+#work .icons{
+    transition: top 0.5s;
+    top: 110%;
+    
+}
+
+#work .text{
+    top: 0%;
+    transition: top 0.5s;
+
+}
+
+#work h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+  }
+
+  #work .image:hover .layer {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+#work .image:hover .text {
+  
+  top: 49%;
+}
+
+#work .image:hover .icons{
+    top: 58%;  
+}
+
+#work .image .icons i:hover {
+    background: transparent;
+    color: #000;
+  }
+
+  #clients{
+    background-color: #f7f7f7;
+  }
+
+  .section-counter{
+    background-color: white;
+    background-position:center center;
+    background-attachment: fixed;
+    padding: 5rem 0; 
+}
+
+.counter-ico .ico-circle{
+    height: 70px;
+    width: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    
+}
+
+.carousel-indicators button{
+  background-color:  #66bd20 !important; 
+}
+
+.counter-text{
+    color: #748182;
+    font-weight: 600;
+}
+
+  #team{
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+
+  
+
+  .car-inner img{
+    width: 13%;
+  }
+
+  .list-inline a i{
+    border: 1px solid #000;
+    color: #fff;    
+    background-color: #000;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .list-inline li{
+    padding: 0 10px;
+  }
+
+  .img-area .social {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+
+  .img-text {
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.single-team{
+    background-color: rgba(52, 52, 52,.8);  
+}
+
+.single-team:hover .social {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+#contact .info .item .icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.5s;
+    color: #66bd20;
+}
+
+#contact .info .item:hover .icon {
+    background: #66bd20;
+    color: #eee;
+}
+
+#contact .form input[type="text"], #contact .form input[type="email"], #contact .form textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+#contact .form .buton {
+    padding: 10px 40px;
+    background-color: #66bd20 ;
+ 
+}
+.buton-bg:hover {
+    background: transparent !important;
+    color: #66bd20 !important;
+}
